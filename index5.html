@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 6: Palindrome Checker</title>
+</head>
+<body>
+    <h2>Palindrome Checker</h2>
+    <p id="result"></p>
+
+    <script>
+        const str = "madam";
+        const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+        const reversed = cleaned.split('').reverse().join('');
+        const isPalindrome = cleaned === reversed;
+        document.getElementById('result').innerText = `"${str}" is ${isPalindrome ? '' : 'not '}a palindrome.`;
+    </script>
+</body>
+</html>

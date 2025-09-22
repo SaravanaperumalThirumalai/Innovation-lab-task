@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 10: Count Words in a String</title>
+</head>
+<body>
+    <h2>Count Words in a String</h2>
+    <p id="result"></p>
+
+    <script>
+        const str = "I love JavaScript";
+        // split by spaces, filter out empty strings if any
+        const words = str.trim().split(/\s+/);
+        document.getElementById('result').innerText = `"${str}" contains ${words.length} words.`;
+    </script>
+</body>
+</html>

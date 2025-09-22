@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse a String</title>
+</head>
+<body>
+    <h2>Reverse a String</h2>
+    <p>Original String: <strong id="originalString">saravana</strong></p>
+    <p>Reversed String: <strong id="reversedString"></strong></p>
+
+    <script>
+        // Function to reverse the string
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+
+        // Original string
+        const originalString = document.getElementById('originalString').innerText;
+        
+        // Get the reversed string and display it
+        const reversedString = reverseString(originalString);
+        document.getElementById('reversedString').innerText = reversedString;
+    </script>
+</body>
+</html>

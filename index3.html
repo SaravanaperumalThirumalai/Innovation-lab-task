@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 4: Count Vowels</title>
+</head>
+<body>
+    <h2>Count Vowels in a String</h2>
+    <p id="result"></p>
+
+    <script>
+        const str = "Hello World!";
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+        let count = 0;
+        for (let ch of str.toLowerCase()) {
+            if (vowels.includes(ch)) count++;
+        }
+        document.getElementById('result').innerText = `Number of vowels in "${str}" is ${count}`;
+    </script>
+</body>
+</html>
